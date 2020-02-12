@@ -4,7 +4,10 @@
 
 using std::string;
 using std::ostream;
-  
+
+/*
+gives a name price and count to item in inventory
+*/
 Inventory::Inventory(string name, float price, int count)
 {
   m_name = name;
@@ -12,11 +15,23 @@ Inventory::Inventory(string name, float price, int count)
   m_in_stock = count;
 }
 
+/*
+gives the option to sell
+*/
 void Inventory::sell()
 {
-  m_in_stock--;
+  if(m_in_stock >= 1)
+  {
+    m_in_stock--;
+  }
+  else
+  {
+    cout<<"Sorry, that item is out of stock"<<endl;
+  }
 }
-
+/*
+operator to sell
+*/
 ostream& operator<<(ostream& stream, const Inventory& item)
 {
   stream << item.m_name 
