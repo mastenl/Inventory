@@ -26,7 +26,7 @@ void Inventory::sell()
   }
   else
   {
-    cout<<"Sorry, that item is out of stock"<<endl;
+    std::cout<<"Sorry, that item is out of stock"<<std::endl;
   }
 }
 /*
@@ -34,7 +34,7 @@ operator to sell
 */
 ostream& operator<<(ostream& stream, const Inventory& item)
 {
-  stream << item.m_name 
+  stream << item.m_name
          << " $"
          << std::fixed << std::setprecision(2) << item.m_price;
   return stream;
