@@ -4,7 +4,10 @@
 
 using std::string;
 using std::ostream;
-
+/*
+The inventory class has a sell function and keeps track of the name of the item
+the price of the item and the number of inventory for the item.
+*/
 class Inventory
 {
   private:
