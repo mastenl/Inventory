@@ -2,3 +2,7 @@ language: cpp
 os: linux
 script:
     make
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> bdad60f3fffb96fa21be8b0edbbe6766f8f07678
